@@ -1,6 +1,6 @@
 <h1>GMU ACM Algorithm Visualizer</h1>
 <h3>Introduction</h3>
-<p>Welcome to the GMU ACM Algorithm Visualizer! Glad you made it here, ACMer of GMU! This is a web app project for visualizing various algorithms. The technologies and tools we will be using for this project is React.js.</p>
+<p>Welcome to the GMU ACM Algorithm Visualizer! Glad you made it here, ACMer of GMU! This are a web app and pc gui application project for visualizing various algorithms. The technologies and tools we will be using for this project is React.js for the webapp and java for the gui application.</p>
 
 <h3>Contributing</h3>
 <p>We welcome contributions from ACM GMU members! Whether you want to fix a bug, add a new feature, or improve documentation, your contributions are valuable. To contribute, please follow these steps:</p>
