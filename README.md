@@ -2,6 +2,10 @@
 <h3>Introduction</h3>
 <p>Welcome to the GMU ACM Algorithm Visualizer! Glad you made it here, ACMer of GMU! This are a web app and pc gui application project for visualizing various algorithms. The technologies and tools we will be using for this project is Next.js.</p>
 
+ <img src="ACMProjectBluePrint.jpg"> 
+
+ <img src="ACMProjectBluePrint2.jpg"> 
+
 <h3>Contributing</h3>
 <p>We welcome contributions from ACM GMU members! Whether you want to fix a bug, add a new feature, or improve documentation, your contributions are valuable. There are 2 ways to contribute:</p>
 <h4>Report an issue:</h4>
