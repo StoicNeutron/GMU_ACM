@@ -4,7 +4,7 @@ const styles = {
   container: {
     outline: "4px solid black",
     padding: 16,
-    borderRadius: 4,
+    borderRadius: 2,
   },
 } as Record<string, React.CSSProperties>;
 
