@@ -1,5 +1,4 @@
 export default function Node() {
-    
     const buttonStyle = {
         backgroundColor: 'yellow',
         outline: '1px solid black',
