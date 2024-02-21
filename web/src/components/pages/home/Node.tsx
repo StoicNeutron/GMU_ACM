@@ -1,11 +1,19 @@
 export default function Node() {
+    
+    const buttonStyle = {
+        backgroundColor: 'yellow',
+        outline: '1px solid black',
+        width: '40px',
+        height: '40px'
+    };
 
     function genCol() {
         const col = [];
 
         for (let i = 0; i < 15; i++) {
             col.push(
-                <button key={i} style={{ backgroundColor: 'yellow', outline: '1px solid black', width: '40px', height: '40px' }}></button>
+                // Use buttonStyle variable for button style
+                <button key={i} style={buttonStyle}></button>
             );
         }
         return col;
