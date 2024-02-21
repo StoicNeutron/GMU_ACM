@@ -2,9 +2,9 @@ import { Box, Divider, Flex, Title } from "@mantine/core";
 
 const styles = {
   container: {
-    outline: "4px solid black",
+    outline: "2px solid black",
     padding: 16,
-    borderRadius: 2,
+    borderRadius: 4,
   },
   divider: {
     border: "2px solid black",
