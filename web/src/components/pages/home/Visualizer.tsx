@@ -1,17 +1,21 @@
-import { Flex, Title } from "@mantine/core";
+import Node from './Node'
 
 const styles = {
   container: {
-    outline: "4px solid black",
+    outline: "2px solid black",
     padding: 16,
-    borderRadius: 2,
+    borderRadius: 4,
+    textAlign: "center",
+    fontWeight: "bold",
   },
 } as Record<string, React.CSSProperties>;
 
 export default function Component() {
   return (
-    <Flex flex={1} style={styles.container}>
-      <Title order={2}>Visualizer</Title>
-    </Flex>
+    <div style={styles.container}>
+      <h4>Visualizer</h4>
+      <br></br>
+      <Node />
+    </div>
   );
 }
