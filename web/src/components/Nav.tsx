@@ -65,11 +65,11 @@ export default function Nav() {
       }}
     >
       <Text
-        size={isMobile ? "md" : "lg"}
+        size={isMobile ? "md" : "md"}
         fw={"bold"}
         style={{ color: "white" }}
       >
-        GMU_ACM_Algorithms_Visualizer
+        GMU_ACM Algorithms_Visualizer
       </Text>
       <Space />
       <Flex align="center" justify="flex-end" ml={"auto"}>
