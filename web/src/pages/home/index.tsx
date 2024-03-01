@@ -9,7 +9,7 @@ function Page<NextPageWithLayout>() {
   return (
     <>
       <Head>
-        <title>Home — GMU ACM Algorithms Visualizer</title>
+        <title>Algorithms Visualizer</title>
       </Head>
       <Flex flex={1} h={{ base: "100%", sm: "calc(100dvh - 64px)" }}>
         {/* Main Content */}
