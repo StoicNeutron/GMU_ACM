@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+/* eslint-disable */
 interface ButtonStyle {
     backgroundColor: string;
     border: string;
@@ -64,7 +64,6 @@ export default function Node() {
                             height: '40px'
                         };
 
-                    /* eslint-disable */
                         // Check if the cell above is visited, if yes remove top border
                         if (rowIndex > 0 && visitedCells.length > 0 && visitedCells[visitedCells.length - 1].row === rowIndex - 1 && visitedCells[visitedCells.length - 1].col === colIndex) {
                             cellStyle.borderTop = 'none';
@@ -81,7 +80,6 @@ export default function Node() {
                         else if (colIndex < nodesArray[rowIndex].length - 1 && visitedCells.length > 0 && visitedCells[visitedCells.length - 1].row === rowIndex && visitedCells[visitedCells.length - 1].col === colIndex + 1) {
                             cellStyle.borderRight = 'none';
                         }
-                    /* eslint-enable */
                         return <React.Fragment key={colIndex}><button style={cellStyle}></button></React.Fragment>;
                     })}
                 </div>
