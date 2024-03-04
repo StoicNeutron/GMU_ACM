@@ -20,7 +20,7 @@ const options = [
 ];
 
 export default function Component() {
-  const [selectedValue, setSelectedValue] = useState(null);
+  const [selectedValue, setSelectedValue] = useState<string>('');
 
   const handleChange = (value: string) => {
     setSelectedValue(value);
