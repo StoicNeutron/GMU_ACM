@@ -1,13 +1,23 @@
-import Head from "next/head";
 import MainLayout from "@/layouts/Main";
 import { ReactElement } from "react";
-import { Box, Text, Title } from "@mantine/core";
+import { Flex } from "@mantine/core";
+import LeftPanel from "@/components/about/LeftPanel";
+import RightPanel from "@/components/about/RightPanel";
 
 function Page<NextPageWithLayout>() {
   return (
     <>
-      {/* Main Content */}
-      <Title order={1}>About</Title>
+      <Flex flex={1} h={{ base: "100%", sm: "calc(100dvh - 64px)" }}>
+        <Flex
+          flex={1}
+          direction={{ base: "column", sm: "row" }}
+          m={16}
+          gap={16}
+        >
+          <LeftPanel />
+          <RightPanel />
+        </Flex>
+      </Flex>
     </>
   );
 }
