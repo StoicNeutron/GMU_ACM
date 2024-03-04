@@ -22,7 +22,7 @@ const options = [
 export default function Component() {
   const [selectedValue, setSelectedValue] = useState(null);
 
-  const handleChange = (value) => {
+  const handleChange = (value: string) => {
     setSelectedValue(value);
   };
 
