@@ -10,7 +10,6 @@ const styles = {
     marginBottom: 20,
     marginTop: 20,
   }
-
 } as Record<string, React.CSSProperties>;
 
 const options = [
@@ -20,11 +19,11 @@ const options = [
 ];
 
 export default function Component() {
-  const [selectedValue, setSelectedValue] = useState<string>('');
+  const [selectedValue, setSelectedValue] = useState<string | null>(null);
 
   const handleChange = (value: string | null, option: { value: string; label: string }) => {
-  setSelectedValue(value);
-};
+    setSelectedValue(value);
+  };
 
   return (
     <Flex flex={1} direction="column" style={styles.container}>
