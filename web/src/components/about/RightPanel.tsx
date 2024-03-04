@@ -22,9 +22,9 @@ const options = [
 export default function Component() {
   const [selectedValue, setSelectedValue] = useState<string>('');
 
-  const handleChange = (value: string) => {
-    setSelectedValue(value);
-  };
+  const handleChange = (value: string | null, option: { value: string; label: string }) => {
+  setSelectedValue(value);
+};
 
   return (
     <Flex flex={1} direction="column" style={styles.container}>
