@@ -9,6 +9,7 @@ const styles = {
   h3: {
     marginBottom: 20,
     marginTop: 20,
+    fontWeight: 'bold',
   }
 } as Record<string, React.CSSProperties>;
 
@@ -33,16 +34,16 @@ export default function Component() {
         onChange={handleChange}
         placeholder="Selected Term"
       />
-      <h3 style={styles.h3}>Current Offices</h3>
+      <h3 style={styles.h3}>Current Officers</h3>
       <h4>Dum Dum</h4>
       <h4>Dum Dum</h4>
       <h4>Dum Dum</h4>
       <h4>Dum Dum</h4>
       <h3 style={styles.h3}>Core Members</h3>
+      <h4>Pete Pongpeauk</h4>
+      <h4>Samnang Thorn</h4>
+      <h4>Amatak Yvi</h4>
       <h4>Natasha Takahashi</h4>
-      <h4>Dum Dum</h4>
-      <h4>Dum Dum</h4>
-      <h4>Dum Dum</h4>
     </Flex>
   );
 }
