@@ -20,11 +20,7 @@ function Page<NextPageWithLayout>() {
         </Flex>
       </Flex>
       <footer style={{ marginTop: 'auto' }}>
-        <Paper padding="lg">
-          <Container size="xl">
-            <Text align="center">Copyright &copy; GMU ACM Club</Text>
-          </Container>
-        </Paper>
+        <Text align="center">Copyright &copy; GMU ACM Club</Text>
       </footer>
     </>
   );
