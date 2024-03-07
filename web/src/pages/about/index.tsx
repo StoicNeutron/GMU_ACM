@@ -1,6 +1,7 @@
 import MainLayout from "@/layouts/Main";
 import { ReactElement } from "react";
 import { Flex } from "@mantine/core";
+import { Container, Text, Paper } from '@mantine/core';
 import LeftPanel from "@/components/about/LeftPanel";
 import RightPanel from "@/components/about/RightPanel";
 

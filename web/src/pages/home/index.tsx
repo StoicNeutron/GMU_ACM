@@ -2,6 +2,7 @@ import Head from "next/head";
 import MainLayout from "@/layouts/Main";
 import { ReactElement } from "react";
 import { Flex } from "@mantine/core";
+import { Container, Text, Paper } from '@mantine/core';
 import Controller from "@/components/pages/home/Controller";
 import Visualizer from "@/components/pages/home/Visualizer";
 
