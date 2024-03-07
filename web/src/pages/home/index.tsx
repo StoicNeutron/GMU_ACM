@@ -24,9 +24,6 @@ function Page<NextPageWithLayout>() {
           <Controller />
         </Flex>
       </Flex>
-      <footer style={{ marginTop: 'auto' }}>
-        <Text align="center">Copyright &copy; GMU ACM Club</Text>
-      </footer>
     </>
   );
 }
