@@ -1,6 +1,7 @@
 import MainLayout from "@/layouts/Main";
 import { ReactElement } from "react";
 import { Flex } from "@mantine/core";
+import { Container, Text, Paper } from '@mantine/core';
 import LeftPanel from "@/components/about/LeftPanel";
 import RightPanel from "@/components/about/RightPanel";
 
@@ -18,6 +19,13 @@ function Page<NextPageWithLayout>() {
           <RightPanel />
         </Flex>
       </Flex>
+      <footer style={{ marginTop: 'auto' }}>
+        <Paper padding="lg">
+          <Container size="xl">
+            <Text align="center">Copyright &copy; GMU ACM Club</Text>
+          </Container>
+        </Paper>
+      </footer>
     </>
   );
 }

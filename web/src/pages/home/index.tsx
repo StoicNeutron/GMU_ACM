@@ -2,6 +2,7 @@ import Head from "next/head";
 import MainLayout from "@/layouts/Main";
 import { ReactElement } from "react";
 import { Flex } from "@mantine/core";
+import { Container, Text, Paper } from '@mantine/core';
 import Controller from "@/components/pages/home/Controller";
 import Visualizer from "@/components/pages/home/Visualizer";
 
@@ -23,6 +24,13 @@ function Page<NextPageWithLayout>() {
           <Controller />
         </Flex>
       </Flex>
+      <footer style={{ marginTop: 'auto' }}>
+        <Paper padding="lg">
+          <Container size="xl">
+            <Text align="center">Copyright &copy; GMU ACM Club</Text>
+          </Container>
+        </Paper>
+      </footer>
     </>
   );
 }
