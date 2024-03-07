@@ -19,9 +19,6 @@ function Page<NextPageWithLayout>() {
           <RightPanel />
         </Flex>
       </Flex>
-      <footer style={{ marginTop: 'auto' }}>
-        <Text align="center">Copyright &copy; GMU ACM Club</Text>
-      </footer>
     </>
   );
 }
