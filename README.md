@@ -1,8 +1,9 @@
 <h1>GMU ACM Algorithm Visualizer</h1>
 <h2>An official Club of Association of Computing Machinery at George Mason University</h2>
 <h3>Introduction</h3>
-<h5>Welcome to the GMU ACM Algorithm Visualizer! </h4>
-<p>This innovative web application and PC GUI application is designed for the visual exploration of a wide range of algorithms. Developed with a focus on interactivity and user engagement, our visualizer serves as a valuable educational tool for both students and enthusiasts eager to delve into algorithmic concepts.
+<h5>Welcome to the GMU ACM Algorithm Visualizer! </h5>
+<p>The Algorithm Visualizer project aims to provide a dynamic and interactive platform for exploring and understanding various algorithms through visualization. Algorithms are fundamental to computer science and play a crucial role in solving complex problems efficiently. However, comprehending the inner workings of algorithms can often be challenging, especially for beginners. This project seeks to bridge that gap by offering an intuitive and visually appealing tool that allows users to observe algorithms in action.</p>
+
 
 <h3>Contributing</h3>
 <p>2 ways to contribute:</p>
