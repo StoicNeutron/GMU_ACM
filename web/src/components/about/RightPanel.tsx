@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Flex, Select } from '@mantine/core';
+import {Flex} from '@mantine/core';
 
 const styles = {
   container: {
@@ -13,27 +13,10 @@ const styles = {
   }
 } as Record<string, React.CSSProperties>;
 
-const options = [
-  { value: '1', label: '' },
-  { value: '2', label: '' },
-  { value: '3', label: '' },
-];
-
 export default function Component() {
-  const [selectedValue, setSelectedValue] = useState<string | null>(null);
-
-  const handleChange = (value: string | null, option: { value: string; label: string }) => {
-    setSelectedValue(value);
-  };
 
   return (
     <Flex flex={1} direction="column" style={styles.container}>
-      <Select
-        data={options}
-        value={selectedValue}
-        onChange={handleChange}
-        placeholder="Selected Term"
-      />
       <h3 style={styles.h3}>Project Leads</h3>
       <h4>Pete Pongpeauk</h4>
       <h4>Samnang Thorn</h4>
