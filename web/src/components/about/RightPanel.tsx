@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Flex} from '@mantine/core';
 
 const styles = {
   container: {
