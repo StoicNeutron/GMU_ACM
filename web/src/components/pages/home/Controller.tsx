@@ -57,7 +57,7 @@ export default function Component() {
         style={{ marginBottom: '20px' }}
       />
 
-      <Button variant="filled" color="green" size="md" radius="md" style={{ marginBottom: '20px' }}>RESET</Button>
+      <Button variant="filled" color="green" size="md" radius="md" style={{ marginBottom: '20px' }}>RUN</Button>
       <Button variant="filled" color="green" size="md" radius="md" style={{ marginBottom: '20px' }}>RESET</Button>
       <Divider style={styles.divider} />
 
