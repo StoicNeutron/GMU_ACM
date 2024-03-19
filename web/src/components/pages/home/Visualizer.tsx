@@ -14,7 +14,6 @@ export default function Component() {
   return (
     <div style={styles.container}>
       <h4>Visualizer</h4>
-      <br></br>
       <Node />
     </div>
   );
