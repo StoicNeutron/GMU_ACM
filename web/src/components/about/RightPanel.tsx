@@ -7,9 +7,13 @@ const styles = {
     //outline: '1px solid black',
   },
   h3: {
-    marginBottom: 20,
+    marginBottom: 15,
     marginTop: 20,
     fontWeight: 'bold',
+  },
+  ul: {
+    listStyle: 'none',
+    paddingLeft: 0,
   }
 } as Record<string, React.CSSProperties>;
 
@@ -18,17 +22,25 @@ export default function Component() {
   return (
     <Flex flex={1} direction="column" style={styles.container}>
       <h3 style={styles.h3}>Project Leads</h3>
-      <h4>Pete Pongpeauk</h4>
-      <h4>Samnang Thorn</h4>
-      <h4>Amatak Yvi</h4>
+      <ul style={styles.ul}>
+        <li>Pete Pongpeauk</li>
+        <li>Samnang Thorn</li>
+        <li>Amatak Yvi</li>
+      </ul>
       <h3 style={styles.h3}>Contributors</h3>
-      <h4>Natasha Takahashi</h4>
-      <h4>Jonas Kazimli</h4>
-      <h4>Dalbir Kang</h4>
+      <ul style={styles.ul}>
+        <li>Natasha Takahashi</li>
+        <li>Jonas Kazimli</li>
+        <li>Dalbir Kang</li>
+      </ul>
       <h3 style={styles.h3}>Contact Information</h3>
-      <h4>Email: samnangt@acm.org</h4>
+      <ul style={styles.ul}>
+        <li>Email: samnangt@acm.org</li>
+      </ul>
       <h3 style={styles.h3}>Join our Discord</h3>
-      <h4>Link: <a href="https://discord.gg/eqCHp5t2">https://discord.gg/eqCHp5t2</a></h4>
+      <ul style={styles.ul}>
+        <li>Link: <a href="https://discord.gg/eqCHp5t2">https://discord.gg/eqCHp5t2</a></li>
+      </ul>
     </Flex>
   );
 }
