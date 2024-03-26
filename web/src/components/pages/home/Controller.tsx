@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Select, Button, MantineProvider } from '@mantine/core';
+import { Box, Button, Divider, Flex, Select } from '@mantine/core';
 import React, { useState } from 'react';
 
 const styles = {
@@ -13,7 +13,7 @@ const styles = {
   h4: {
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: '25px'
+    marginBottom: '25px',
   },
   button: {
     position: 'relative',
@@ -32,10 +32,17 @@ const speedOptions = [
 ];
 
 export default function Component() {
-  const [selectedValue, setSelectedValue] = useState<string | null>(null);
+  const [selectedAlgorithm, setSelectedAlgorithm] = useState<string | null>(
+    null
+  );
+  const [selectedSpeed, setSelectedSpeed] = useState<string | null>(null);
 
-  const handleChange = (value: string | null, option: { value: string; label: string }) => {
-    setSelectedValue(value);
+  const handleAlgorithmChange = (value: string | null) => {
+    setSelectedAlgorithm(value);
+  };
+
+  const handleSpeedChange = (value: string | null) => {
+    setSelectedSpeed(value);
   };
   return (
     <Flex flex={1} direction={'column'} style={styles.container}>
@@ -43,22 +50,38 @@ export default function Component() {
 
       <Select
         data={algorithmsOptions}
-        value={selectedValue}
-        onChange={handleChange}
+        value={selectedAlgorithm}
+        onChange={handleAlgorithmChange}
         placeholder="Selected Algorithm"
         style={{ marginBottom: '20px' }}
       />
 
       <Select
         data={speedOptions}
-        value={selectedValue}
-        onChange={handleChange}
+        value={selectedSpeed}
+        onChange={handleSpeedChange}
         placeholder="Selected Speed"
         style={{ marginBottom: '20px' }}
       />
 
-      <Button variant="filled" color="green" size="md" radius="md" style={{ marginBottom: '20px' }}>RUN</Button>
-      <Button variant="filled" color="green" size="md" radius="md" style={{ marginBottom: '20px' }}>RESET</Button>
+      <Button
+        variant="filled"
+        color="green"
+        size="md"
+        radius="md"
+        style={{ marginBottom: '20px' }}
+      >
+        RUN
+      </Button>
+      <Button
+        variant="filled"
+        color="green"
+        size="md"
+        radius="md"
+        style={{ marginBottom: '20px' }}
+      >
+        RESET
+      </Button>
       <Divider style={styles.divider} />
 
       <Box id="analysis" flex={1} />
