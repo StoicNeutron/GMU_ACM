@@ -1,4 +1,5 @@
-import Node from './Node'
+import React, { useState } from 'react';
+import Node from './Node';
 
 const styles = {
   container: {
@@ -10,11 +11,17 @@ const styles = {
   },
 } as Record<string, React.CSSProperties>;
 
-export default function Component() {
+interface ComponentProps {
+  signal: boolean; // Define the signal prop
+}
+
+const Component: React.FC<ComponentProps> = ({ signal }) => {
   return (
     <div style={styles.container}>
       <h4>Visualizer</h4>
-      <Node />
+      <Node startAnimation={signal} />
     </div>
   );
 }
+
+export default Component;

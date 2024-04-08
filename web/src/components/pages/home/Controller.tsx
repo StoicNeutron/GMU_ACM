@@ -1,5 +1,9 @@
-import { Box, Button, Divider, Flex, Select } from '@mantine/core';
+import { Button, Divider, Flex, Select } from '@mantine/core';
 import React, { useState } from 'react';
+
+interface ControllerProps {
+  onRun: (algorithm: string, speed: string) => void;
+}
 
 const styles = {
   container: {
@@ -31,17 +35,12 @@ const speedOptions = [
   { value: '2', label: '2X' },
 ];
 
-export default function Component() {
-  const [selectedAlgorithm, setSelectedAlgorithm] = useState<string | null>(
-    null
-  );
-  const [selectedAlgorithmName, setSelectedAlgorithmName] = useState<string | null>(
-    null
-  );
-  const [selectedAlgorithmDes, setSelectedAlgorithmDes] = useState<string | null>(
-    null
-  );
+const Controller: React.FC<ControllerProps> = ({ onRun }) => {
+  const [selectedAlgorithm, setSelectedAlgorithm] = useState<string | null>(null);
+  const [selectedAlgorithmName, setSelectedAlgorithmName] = useState<string | null>(null);
+  const [selectedAlgorithmDes, setSelectedAlgorithmDes] = useState<string | null>(null);
   const [selectedSpeed, setSelectedSpeed] = useState<string | null>(null);
+  const [signal, setSignal] = useState<boolean>(false); // Signal state
 
   const handleAlgorithmChange = (value: string | null) => {
     setSelectedAlgorithm(value);
@@ -61,6 +60,13 @@ export default function Component() {
   };
 
   const isButtonsDisabled = selectedAlgorithm === null || selectedSpeed === null;
+
+  const handleRunClick = () => {
+    if (!isButtonsDisabled && selectedAlgorithm && selectedSpeed) {
+      setSignal(true); // Set signal to true when RUN button is clicked
+      onRun(selectedAlgorithm, selectedSpeed);
+    }
+  };
 
   return (
     <Flex flex={1} direction={'column'} style={styles.container}>
@@ -89,6 +95,7 @@ export default function Component() {
         radius="md"
         style={{ marginBottom: '20px' }}
         disabled={isButtonsDisabled}
+        onClick={handleRunClick}
       >
         RUN
       </Button>
@@ -107,7 +114,9 @@ export default function Component() {
       <h3>Algorithm: {selectedAlgorithmName}</h3>
       <p>{selectedAlgorithmDes}</p>
 
-      <Box id="analysis" flex={1} />
+      <p>Signal: {signal.toString()}</p> {/* Display signal state */}
     </Flex>
   );
 }
+
+export default Controller;
