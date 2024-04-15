@@ -8,7 +8,7 @@ import Visualizer from "@/components/pages/home/Visualizer";
 function Page() {
   const [signal, setSignal] = useState<boolean>(false); // Lift state up to Page component
 
-  const handleRun = (algorithm, speed) => {
+  const handleRun = (algorithm: string, speed: number) => {
     // Handle the selected algorithm and speed data here
     console.log("Selected Algorithm:", algorithm);
     console.log("Selected Speed:", speed);
