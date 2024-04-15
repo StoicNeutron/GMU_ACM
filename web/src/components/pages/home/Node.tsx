@@ -11,9 +11,13 @@ interface ButtonStyle {
     height: string;
 }
 
+interface NodeProps {
+    startAnimation: boolean;
+}
+
 const initialNodesArray: JSX.Element[][] = Array.from({ length: 15 }, () => Array.from({ length: 15 }, () => <button key={Math.random()}></button>));
 
-export default function Node() {
+const Node: React.FC<NodeProps> = ({ startAnimation }) => {
     const [nodesArray, setNodesArray] = useState(initialNodesArray);
     const [visitedCells, setVisitedCells] = useState<{ row: number; col: number }[]>([]);
 
@@ -45,14 +49,19 @@ export default function Node() {
         }
     }
 
-    // useEffect hook to perform DFS when component mounts
+    // useEffect hook to perform DFS when component mounts or when startAnimation changes
     useEffect(() => {
-        // Initialize visited array to keep track of visited cells
-        const visited: boolean[][] = Array.from({ length: nodesArray.length }, () => Array.from({ length: nodesArray[0].length }, () => false));
+        if (startAnimation) {
+            // Initialize visited array to keep track of visited cells
+            const visited: boolean[][] = Array.from({ length: nodesArray.length }, () => Array.from({ length: nodesArray[0].length }, () => false));
 
-        // Call DFS with initial coordinates to start carving paths
-        DFS(0, 0, visited);
-    }, []);
+            // Call DFS with initial coordinates to start carving paths
+            DFS(0, 0, visited);
+
+            // set signal back to false
+            startAnimation = false;
+        }
+    }, [startAnimation]);
 
     // Render the generated maze
     return (
@@ -96,3 +105,5 @@ export default function Node() {
         </div>
     );
 }
+
+export default Node;
