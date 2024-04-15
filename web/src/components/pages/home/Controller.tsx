@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 interface ControllerProps {
   onRun: (algorithm: string, speed: string) => void;
+  signal: boolean;
 }
 
 const styles = {
