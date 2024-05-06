@@ -4,6 +4,7 @@
 <h5>Welcome to the GMU ACM Algorithm Visualizer! </h5>
 <p>The Algorithm Visualizer project aims to provide a dynamic and interactive platform for exploring and understanding various algorithms through visualization. Algorithms are fundamental to computer science and play a crucial role in solving complex problems efficiently. However, comprehending the inner workings of algorithms can often be challenging, especially for beginners. This project seeks to bridge that gap by offering an intuitive and visually appealing tool that allows users to observe algorithms in action.</p>
 
+<h5>Note: To be finish in the Fall Semester 2024</h5>
 
 <h3>Contributing</h3>
 <p>2 ways to contribute:</p>
